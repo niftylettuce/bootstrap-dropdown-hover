@@ -75,7 +75,7 @@
     });
 
     dropdown.element.on('click.dropdownhover', function (e) {
-      if (!_mouseDetected) {
+      if (dropdown.settings.clickBehavior !== 'link' && !_mouseDetected) {
         return;
       }
 
